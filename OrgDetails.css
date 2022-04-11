@@ -1,0 +1,253 @@
+/* Import custom fonts */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
+/* Reset Default Browser Styles */
+html, body, a, h1, h2, h3, h4, h5, h6, ul, li, span, section, footer, p, i, div{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+		list-style-type: none;
+		color: inherit;
+}
+html,
+body {
+  height: 100%;
+  	font-family: 'Open Sans', sans-serif;
+  /*overflow: hidden;*/
+}
+
+
+.btn{
+    display: inline-block;
+    background-color:#f5e50d;
+    color: black;
+    padding:  8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    /* margin-left: 100px; */
+   
+    font-family: 'Josefin Sans', sans-serif;
+    transition: background-color 0.5s ,color 0.5s;
+}
+.btn:hover{
+    background-color: #e2ed4c;
+    color: rgb(12, 12, 12);
+}
+
+
+#site-canvas {
+  width: 100%;
+  height: 100%;
+   /*overflow-y: scroll;*/
+  position:relative;
+}
+
+
+
+.pageHeader h1{
+	position: absolute;
+	top: 175px;
+	width: 100%;
+	text-align: center;
+	display: block;
+	vertical-align: center;
+ font-size: 5em;
+}
+
+.pageHeader img {
+	z-index: 5;
+	top: 55px;
+ -ms-interpolation-mode: bicubic; 
+ display: inline;
+
+}
+
+
+
+#page-content {
+	width: 80%;
+	margin: 0 auto;
+}
+p {
+	padding: 20px;
+}
+p + p {
+	padding-top: 0px;
+}
+
+#page-content h3 {
+	padding: 0 20px;
+	font-size: 1.25;
+}
+h2, h3, h4{
+	text-align: center;
+}
+
+#page-content h2 {
+	font-size: 2em;
+		font-family: 'Bitter', serif;
+}
+
+#page-content h3 {
+	font-size: 1.5em;
+		font-family: 'Bitter', serif;
+}
+#page-content h4 {
+	font-size: 1.25em;
+		font-family: 'Bitter', serif;
+		padding: 10px;
+		color: #8C99A4;
+}
+
+
+
+footer {
+	background-color: #333333;
+	color: #EEEEEE;
+	padding: 50px 10px;
+}
+footer section {
+	width: 33%;
+	float: left;
+	min-width: 250px;
+}
+
+footer i {
+	font-size: 50px;
+	cursor: pointer;
+	display: inline;
+	float: right;
+	margin: 0 10px;
+}
+
+footer a {
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s
+}
+
+
+footer a:hover {
+	color: #3B5998;
+}
+footer h3 {
+	display: inline;
+}
+
+footer hr {
+	float: none;
+	clear: both;
+}
+
+footer h2 {
+	font-size: 1.5em;
+}
+
+
+/*Media Queries for bigger screens*/
+@media screen and (max-width: 949px) {
+
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+#site-canvas {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+	
+	.pageHeader h1{
+		font-size: 4em;
+		top: 210px;
+	}
+
+	
+	
+} /*Ending Media Query Bracket (max-width: 949px)*/
+@media screen and (max-width: 787px) { 
+		#page-content {
+		width: 90%;
+	}
+	footer section {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 600px) {
+		footer section {
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+	#page-content {
+		width: 100%;
+	}
+	
+	#page-content h2 {
+		font-size: 1.5em
+	}
+	
+	.pageHeader, .pageHeader img {
+		height: 250px;
+	}
+	
+	.pageHeader h1{
+		font-size: 3em;
+		top: 210px;
+	}
+	
+	td, table caption {
+		padding: 3px 10px;
+	}
+	
+	table {
+		margin: 10px 5%;
+	}
+	
+	footer section {
+		width: 100%;
+		min-width: 100%;
+	}
+
+} /*Ending Media Query Bracket (max-width: 500px) */
+@media screen and (max-width: 400px) {
+	
+	.pageHeader, .pageHeader img {
+		height: 150px;
+	}
+	
+	.pageHeader h1{
+		font-size: 1.8em;
+		top: 150px;
+	}
+	
+	footer h2 {
+		font-size: 1.25em;
+	}
+	
+} /*Ending Media Query Bracket (max-width: 400px) */
+
+
+

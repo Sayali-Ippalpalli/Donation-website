@@ -1,0 +1,328 @@
+.fixed-top.scrolled {
+  background-color:#01012b !important;
+  transition: background-color 200ms linear;
+}
+
+
+
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+html{
+  scroll-behavior: smooth;
+}
+  .carousel-caption {
+    bottom: 220px;
+  }
+  .carousel-caption h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .carousel-caption h1{
+    font-size: 65px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: 'Carter One', cursive;
+  }
+  .carousel-caption p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+  }
+  .drk:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:linear-gradient(145deg,#a7a5a5,#0c0c0c);
+ 
+  opacity:0.8;
+}
+.navbar-nav a{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:#fae845;
+    
+}
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-size: larger;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#ffeb39;
+}
+.navbar-nav{
+    text-align: center;
+}
+.nav-link{
+    padding: .2rem 1rem;
+}
+.btn{
+    color: white;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-weight: 500;
+   
+}
+.w-100{
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+
+
+
+
+
+.half{
+  flex: 50%;
+  padding: 0px 40px;
+}
+.half img{
+  vertical-align: middle;
+  width: 100%;
+  
+}
+.half h1{
+  font-size: 45px;
+  color: #1e272e;
+  font-family: 'Carter One', cursive;
+}
+.half p{
+  margin-top: 32px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #485460;
+  font-size: 18px;
+}
+
+
+
+
+
+
+ 
+
+  .con2 h1{
+    font-size: 40px;
+    
+   padding-bottom: 10px;
+   font-family: 'Carter One', cursive;
+  }
+  .con2 h5{
+    font-size: 25px;
+   
+   padding-bottom: 10px;
+   font-family: 'Carter One', cursive;
+  }
+  .con2 p{
+    font-family: 'Ubuntu', sans-serif;
+    color: #485460;
+    font-size: 17px;
+    padding-bottom: 25px;
+  }
+
+.card{
+  transition: transform 0.5s,opacity 0.5s,box-shadow 0.5s;
+}
+.card:hover{
+  transform: translateY(-10px);
+  opacity: 0.8;
+  box-shadow: 0 1rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+.test{
+  display: inline-block;
+  text-align: center;
+  margin: 28px;
+  background-color: white;
+} 
+
+
+
+.ved{
+ 
+ 
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid white;
+  box-shadow: 0 1rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+.ved iframe{
+  height: 200px;
+ width: 400px;
+}
+
+
+
+
+.footer{
+  position: relative;
+  margin-top: 100px;
+}
+.footer .it{
+  position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------Responsiveness---------------------------------------------------------- */
+
+
+
+
+
+@media only screen and (max-width:992px){
+  .navbar-nav.ml-auto{
+      background: rgba(0,0,0,0.8);
+  }
+  .navbar-toggler{
+      padding: 1px 5px;
+      font-size: 18px;
+      line-height: 0.3;
+      background: #fff;
+  }
+  .half{
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+  .half h1,p{
+    text-align: center;
+  }
+  
+  .test{
+    display: block;
+    margin: auto;
+  }
+  .ved{
+    margin-top: 30px;
+  }
+  
+}
+
+@media only screen and (max-width:767){
+ 
+  
+  .test{
+    display: block;
+    margin: auto;
+  }
+  
+  
+}
+
+
+
+@media only screen and (max-width:500px){
+  .carousel-caption {
+    bottom: 220px;
+  }
+  .carousel-caption h3{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .carousel-caption h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: 'Carter One', cursive;
+  }
+  .carousel-caption p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+  }
+  .test{
+    display: block;
+    margin: auto;
+  }
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  
+  .ved iframe{
+    height: 100px;
+   /* width: 100%; */
+  }
+  
+  .test{
+    display: block;
+    margin: auto;
+  } 
+  
+  .half img{
+    margin-top: 30px;
+  }
+  
+  .ved{
+    position: relative;;
+    margin-top: 150px;
+  }
+  
+ 
+}
+
+
+
+
